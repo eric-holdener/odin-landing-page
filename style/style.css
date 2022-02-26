@@ -2,28 +2,32 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    justify-content: center;
 }
 
-.container {
-    flex-grow: 1;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    gap: 12px;
 }
 
-.header, .footer, .hero {
-    background-color: #1F2937;
+button {
+    border-radius: 4px;
+    color: #FFFF;
 }
 
-.hero-main {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-}
-
-.hero-second, a{
-    font-size: 18px;
-    color: #E5E7Eb;
+.header {
+    justify-content: space-between;
+    display: flex;
 }
 
 .header-logo {
@@ -37,12 +41,44 @@ body {
     color: #1F2937;
 }
 
-.cta, button{
-    background-color: #3882F6;
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-button {
-    color: #FFFF;
+.dark-blue-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    gap: 16px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.placeholder-image {
+    width:auto;
+    height:auto;
+    background-color:gray;
+    color:white;
+    display: flex;
+    flex-basis: auto;
+}
+
+.gray-container {
+    background-color: #E5E7EB;
 }
 
 .quote {
@@ -50,6 +86,39 @@ button {
     color:#1F2937;
 }
 
-.quote-background {
-    background-color: #E5E7EB;
+.white-border {
+    border-color: white;
+}
+
+.footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header, .footer {
+    padding: 16px;
+}
+
+.hero-second, a{
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+.cta, button{
+    background-color: #3882F6;
+}
+
+.header, .footer, .dark-blue-container {
+    background-color: #1F2937;
+}
+
+.dark-blue-container, .white-container, .gray-container, .blue-container {
+    flex: 1;
+}
+
+.header, .footer, .dark-blue-container, .white-container, .gray-container, .blue-container {
+    padding-left: 10%;
+    padding-right: 10%;
 }
